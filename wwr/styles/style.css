@@ -1,0 +1,112 @@
+:root {
+  --primary-color: #004257;
+  --secondary-color: #00b4c8;
+  --accent1-color: #F07167;
+  --accent2-color: #FDFCDC;
+
+  --headline-color-on-white: #004257; /* headlines on a white background */
+  --headline-color-on-white: #004257; /* headlines on a white background */
+  --headline-color-on-color: white; /* headlines on a colored background */
+  --paragraph-color-on-white: #004257; /* paragraph text on a white background */
+  --paragraph-color-on-white: #004257; /* paragraph text on a white background */
+  --paragraph-color-on-color: white; /* paragraph text on a colored background */
+  --paragraph-background-color: #004257;
+  --nav-link-color: #FDFCDC;
+  --nav-background-color: #004257;
+  --nav-hover-link-color: #FDFCDC;
+  --nav-hover-background-color: #F07167;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+.icon {
+    width: 80px;
+}
+
+header {
+    background-color: var(--accent1-color);
+}
+nav a {
+    text-align: center;
+    color : var(--nav-background-color);
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--accent2-color);
+    color: var(--nav-hover-link-color);
+}
+.home-title {
+    color: var (--headline-color-on-color);
+}
+
+h4 {
+    color: var(--accent2-color);
+}
+
+.book, .join {
+    background-color: var(--secondary-color) ;
+    color: var(--headline-color-on-color);
+}
+
+.book:hover, .join:hover {
+    background-color: var(--accent2-color);
+    color: var(--headline-color-on-white);
+}
+
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+}
+
+.button-box {
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+
+#background {
+    height: 725px;
+    background-color: var(--secondary-color);
+}
+
+.msg {
+    background-color: var(--secondary-color);
+}
+
+.msg h2 {
+    color: var(--headline-color-on-color);
+}
+
+.msg p {
+    color: var(--paragraph-color-on-color)
+}
+
+footer {
+    background-color: var(--accent1-color);
+    color: var (--primary-color);
+}
+
+footer a {
+    color: var(--primary-color);
+}
+
+footer a:hover {
+    color: var(--nav-hover-link-color);
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}   
