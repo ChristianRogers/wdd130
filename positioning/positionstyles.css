@@ -68,26 +68,37 @@
 /* Activity 3 styles */ 
 .content3 {
   /* This is the parent of the activity 3 boxes. */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row : 1fr 1fr 1fr;
+  grid-column-gap : 10px; /* Adds space between columns */
 }
 .red3 {
-  width: 100px; 
+  width: 100%; 
   height: 100px; 
   background-color: red; 
+  grid-column: 1/3; /* Spans both columns */
 } 
 .green3 {
-  width: 100px; 
-  height: 100px; 
+  width: 45%; 
+  height: 200px; 
   background-color: green;
+  grid-row : 2/3; /* Spans one row */
+  grid-column: 1/2; /* Spans one column */
 } 
 .yellow3 {
-  width: 100px; 
-  height: 100px; 
+  width: 45%; 
+  height: 200px; 
   background-color: gold; 
+  grid-row : 2/3; /* Spans one row */
+  grid-column: 2/3; /* Spans one column */
 } 
 .blue3 {
-  width: 100px;
+  width: 100%;
   height: 100px; 
   background-color: blue; 
+  grid-row : 3/4; /* Spans one row */
+  grid-column: 1/3; /* Spans both columns */
 } 
 /* Activity 4 styles */ 
 .content4 {
