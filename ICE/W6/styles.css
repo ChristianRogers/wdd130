@@ -2,62 +2,36 @@ body {
   margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  background-color: grey;
-  height: 100vh;
+  grid-template-rows: 1fr 1fr 1fr;
   font-family: Georgia, serif;
-}
-
-.cherry-image {
-  grid-column: 1 / 2;
-  grid-row: 1 / 3;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  background-color: white;
-}
-
-.title {
-    grid-column: 1 / 3;
-    grid-row: 2/ 3;
-    align-self: center;
-    justify-self: center;
-    font-size: 4rem;
-    margin: 0;
-    display: grid;
-    background-color: grey;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 33% 33% 33%;
-    font-family: Georgia, serif;
+  background-color: grey;
 }
 
 .cherry {
-    grid-column: 1 / 2;
-    grid-row: 1 / 3;
-    width: 50%;
-    height: 100%;
-    background-color: white;
-    z-index: 1;
-    position: absolute;
-
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+  width: 50%;
+  height: 100%;
+  background-color: white;
+  z-index: 0;
+  position: absolute
 }
 
 .title {
-    grid-column: 2 /3;
-    grid-row: 1 / 2;
-    font-size: 4rem;
-    font-weight: bold;
-    z-index: 2;
-    position: relative;
-    
-
-
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  text-align: center;
+  font-size: 10rem;
+  font-weight: bold;
+  margin: 0;
+  z-index: 1;
+  position: absolute
 }
 
 .subtitle {
-    grid-column: 2 / 3;
-    grid-row: 2/3;
-    font-size: 2rem;
-    color: #9c0e11;
-    
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  text-align: center;
+  font-size: 4rem;
+  color: #9c0e11;
 }
