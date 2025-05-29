@@ -11,11 +11,11 @@ Fonts are separated by a & */
   --primary-color: #004257;
   --secondary-color: #006f7b;
   --accent1-color: #F07167;
-  --accent2-color: #FDFCDC;
+  --accent2-color: #ffffff;
 
   /* TODO: Week02 - change the values below to your chosen font(s). */
   /* TODO: Week02 - make sure you provide more than one font option for each to handle fallback */
-  --heading-font: Playfair Display, Palatino Linotype, sans-serif;
+  --heading-font: Merriweather, Palatino Linotype, sans-serif;
   --paragraph-font: Palatino Linotype, sans-serif;
 
   /* TODO: Week02 - these colors below should be chosen from among your palette colors above */
