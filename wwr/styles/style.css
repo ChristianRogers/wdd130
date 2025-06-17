@@ -284,3 +284,35 @@ footer p a:hover {
         margin-top: 25px;
     }
 }
+
+/* Page 2 Specific Styles */
+#faq_title {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.question {
+    margin: 20px 150px;
+    padding: 20px 30px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #424242;
+}
+.question h3 {
+    font-style: italic;
+    font-family: 'Merriweather', Palatino Linotype, serif;
+    color: var(--secondary-color)
+}
+
+#faq-img {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px var(--accent1-color);
+}
