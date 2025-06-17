@@ -313,6 +313,7 @@ footer p a:hover {
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    border: var(--accent1-color ) 10px solid;
     border-radius: 5px;
-    box-shadow: 5px 5px 10px var(--accent1-color);
+    box-shadow: 5px 5px 10px #424242;
 }
