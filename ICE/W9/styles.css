@@ -1,0 +1,70 @@
+body {
+    background-color: #252424;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: "roboto slab", sans-serif;
+}
+.big_card {
+    background-color: white;
+    grid-column: 2;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#bridge {
+    width: 100%;
+    height: auto;
+    margin: none;
+    margin-bottom: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#weeks {
+    color: blue;
+    font-size: 1em;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 50px;
+    
+}
+
+h3 {
+    font-weight: normal;
+    padding: 30px;
+    padding-top: 10px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+    background-color: blue;
+    color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card h4 {
+    font-weight: bold;
+    font-size: 20px;
+   
+}
+
+.card-content1 {
+    text-align: center;
+    grid-column: 1/2;
+    border-right: 1px solid white;
+}
+
+.card-content2 {
+    text-align: center;
+    grid-column: 2/3;
+    border-right: 1px solid white;
+}
+
+.card-content3 {
+    text-align: center;
+    grid-column: 3/4;
+}
