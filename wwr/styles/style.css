@@ -278,7 +278,7 @@ footer p a:hover {
     .mountains, .msg {
         width: 80%;
         display: block;
-        margin: 0 auto;
+        margin: 0 -1;
     }
     footer {
         margin-top: 25px;
@@ -289,14 +289,15 @@ footer p a:hover {
         margin-top: 20px;
     }
     .question {
-        margin: none;
+        margin: auto 0;
         padding: 10px 5px;
         text-align: center;
     }
     #faq-img {
-        width: 50%;
+        width: 34%;
         margin: 0 auto;
         padding: 10px;
+        display: block;
     }
 
 }
@@ -322,7 +323,7 @@ footer p a:hover {
 .question h3 {
     font-style: italic;
     font-family: 'Merriweather', Palatino Linotype, serif;
-    color: var(--secondary-color)
+    color: var(--secondary-color);
 }
 
 #faq-img {
