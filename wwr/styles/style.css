@@ -313,12 +313,13 @@ footer p a:hover {
 }
 
 .question {
-    margin: 20px 150px;
-    padding: 20px 30px;
+    margin: 20px 10%;
+    padding: 20px 5%;
     background-color: var(--primary-color);
     color: var(--accent2-color);
     border-radius: 5px;
     box-shadow: 5px 5px 10px #424242;
+    text-align: unset;
 }
 .question h3 {
     font-style: italic;
