@@ -283,6 +283,22 @@ footer p a:hover {
     footer {
         margin-top: 25px;
     }
+/* Page 2 specific mobile*/
+    #faq_title {
+        font-size: .5em;
+        margin-top: 20px;
+    }
+    .question {
+        margin: none;
+        padding: 10px 5px;
+        text-align: center;
+    }
+    #faq-img {
+        width: 50%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
 }
 
 /* Page 2 Specific Styles */
