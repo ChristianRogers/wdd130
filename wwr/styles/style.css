@@ -292,10 +292,8 @@ footer p a:hover {
         font-size: 80%;
     }
     #faq-img {
-        width: 34%;
-        margin: 0 auto;
-        padding: 10px;
-        display: block;
+        width: 50%;
+        margin: auto;
     }
 
 }
