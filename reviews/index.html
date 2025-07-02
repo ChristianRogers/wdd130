@@ -28,32 +28,92 @@
         <p>Most game reviews you find online are either done by paid professionals from a company or online personalities, often paid to review content or given the game for free. These reviewers have different values and standards from the average gamer. That’s where I come in: a regular gamer reviewing games. I will tell you what you want to know, and if a game is worth your hard-earned money.
         <br><br>Instead of expensive OLED TVs and high-end gaming monitors that other reviewers use, I play on the same budget 4K and 1080p screens that many American families own. I also use the same consoles and modest PC hardware for my reviews, instead of thousand-dollar parts.</p>
 
-        <div id="Consoles">
-            <h2>I Play On Everything</h2>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Xbox_Logo.svg" alt="Consoles and PC hardware" id="Xbox_Logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/PlayStation_logo.svg" alt="PlayStation Logo" id="PlayStation_Logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Nintendo_gray_logo.svg" alt="Nintendo Logo" id="Nintendo_Logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg" alt="Steam Logo" id="Steam_Logo">
+        <div id="consoles">
+            <h2>I Play On Everything!</h2>
+            <div id="platforms">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/Xbox_Logo.svg" alt="Consoles and PC hardware" id="xbox_Logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/PlayStation_logo.svg" alt="PlayStation Logo" id="playStation_Logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/76/Nintendo_gray_logo.svg" alt="Nintendo Logo" id="nintendo_Logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Steam_icon_logo.svg" alt="Steam Logo" id="steam_Logo">
+            </div>
         </div>
 
         <p>I have been playing video games for almost my whole life, and I haven’t gotten sick of it yet. Personally, the most important thing about a game is whether the gameplay is fun or not. Everything else is secondary to me. Below are some of my favorite all-time games and franchises, and the ones I keep coming back to.</p>
-        <div id="Game_logos">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Sonic_The_Hedgehog.svg" alt="Sonic the Hedgehog Logo" id="Sonic_logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Super_Mario_Bros._Logo.svg" alt="Super Mario Logo" id="Mario_logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Fortnite_BR_2022_Logo_with_black_text.svg" alt="Fortnite Logo" id="Fortnite_logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Call_of_Duty_logo_2023.svg" alt="Call of Duty Logo" id="COD_logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Halo_%28series%29_logo.svg" alt="Halo Logo" id="Halo_logo">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Super_Smash_Bros._logo_2018.svg" alt="Smash Bros Logo" id="Smash_logo">
-        </div>
 
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Sonic_The_Hedgehog.svg" style="width:100%">
+            </div>
 
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Super_Mario_Bros._Logo.svg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Fortnite_BR_2022_Logo_with_black_text.svg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Call_of_Duty_logo_2023.svg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Halo_%28series%29_logo.svg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Super_Smash_Bros._logo_2018.svg" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
 
     </div>
     </main>
 
     <footer>
             <p>Regular Guy Reviews &copy; 2025 - Christian Rogers</p>
-            <p id="site-plan"><a href="site-plan-rafting.html">Site Plan</a></p>
+            <p id="site-plan"><a href="site-plan.html">Site Plan</a></p>
     </footer>
 </body>
+
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].classList.remove("active");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].classList.add("active");
+}
+</script>
 </html>
