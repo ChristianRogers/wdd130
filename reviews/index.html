@@ -18,7 +18,7 @@
     <main>
     <div class="hero">
        <div class="hero_box">
-            <img src="images/gaming.jpg" class="hero_img">
+            <img src="images/gaming.jpg" class="hero_img" alt="guy playing xbox">
         </div>
         <img src="logo.png" alt="Regular Guy Reviews Logo" class="hero_logo">
     </div>
@@ -43,32 +43,32 @@
         <div class="slideshow-container">
             <div class="mySlides fade">
             <div class="numbertext">1 / 6</div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Sonic_The_Hedgehog.svg" style="width:100%">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1f/Sonic_The_Hedgehog.svg" alt="Sonic The Hedgehog" style="width:100%">
             </div>
 
             <div class="mySlides fade">
             <div class="numbertext">2 / 6</div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Super_Mario_Bros._Logo.svg" style="width:100%">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Super_Mario_Bros._Logo.svg" alt="Super Mario Bros." style="width:100%">
             </div>
 
             <div class="mySlides fade">
             <div class="numbertext">3 / 6</div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Fortnite_BR_2022_Logo_with_black_text.svg" style="width:100%">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Fortnite_BR_2022_Logo_with_black_text.svg" alt="Fortnite" style="width:100%">
             </div>
 
             <div class="mySlides fade">
             <div class="numbertext">4 / 6</div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Call_of_Duty_logo_2023.svg" style="width:100%">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Call_of_Duty_logo_2023.svg" alt="Call of Duty" style="width:100%">
             </div>
 
             <div class="mySlides fade">
             <div class="numbertext">5 / 6</div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Halo_%28series%29_logo.svg" style="width:100%">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Halo_%28series%29_logo.svg" alt="Halo" style="width:100%">
             </div>
 
             <div class="mySlides fade">
             <div class="numbertext">6 / 6</div>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Super_Smash_Bros._logo_2018.svg" style="width:100%">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Super_Smash_Bros._logo_2018.svg" alt="Super Smash Bros" style="width:100%">
             </div>
 
             <!-- Next and previous buttons -->
@@ -84,23 +84,20 @@
             <p>Regular Guy Reviews &copy; 2025 - Christian Rogers</p>
             <p id="site-plan"><a href="site-plan.html">Site Plan</a></p>
     </footer>
-</body>
 
 <script>
-    let slideIndex = 1;
-showSlides(slideIndex);
+  let slideIndex = 1;
+  showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
+  function plusSlides(n) {
   showSlides(slideIndex += n);
-}
+  }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
 
-function showSlides(n) {
+  function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
@@ -114,6 +111,7 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].classList.add("active");
-}
+  }
 </script>
+</body>
 </html>
