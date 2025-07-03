@@ -25,7 +25,7 @@ nav {
 nav a {
     text-align: center;
     text-decoration: none;
-    font-family: Merriweather, Palatino Linotype, sans-serif;
+    font-family: var(--heading-font);
     font-size: xx-large;
     padding: 3px 10px;
 }
@@ -49,13 +49,14 @@ nav a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    position: relative;
 }
 
 .hero_logo {
     grid-column: 2/3;
     grid-row: 1/3;
     width: auto;
-    height: 40%;
+    height: 200px; /* Changed from 40% to 200px for predictable sizing */
     justify-self: center;
     border-radius: 10%;
     
@@ -64,20 +65,21 @@ nav a:hover {
 .hero_box {
     grid-column: 1/4;
     grid-row: 1/3;
-    z-index: -1;
+    position: relative;
+    z-index: 0;
 }
 
-.about {
+.main-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: large;
-    margin: auto 20vh;
+    margin: 0 auto 20px auto;
     padding-top: 20px;
 }
 
-.about p {
+.main-text p {
     max-width: 800px;
     text-align: justify;
     line-height: 1.5;
@@ -89,6 +91,7 @@ nav a:hover {
     text-align: center;
     padding: 20px;
     background-color: var(--primary-color);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 #consoles h2 {
     color: var(--accent2-color);
@@ -147,11 +150,11 @@ body h1, body h2, body h3 {
     width: 800px;
     height: auto;
     position: relative;
-    margin: 20PX auto;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   
     background-color: var(--primary-color);
     padding: 30px;
-    margin: 40px auto;
     border-radius: 20px;
 }
 
@@ -187,7 +190,7 @@ body h1, body h2, body h3 {
     padding: 8px 12px;
     position: absolute;
     top: 0;
-    }
+}
 
 .fade {
     animation-name: fade;
@@ -201,9 +204,135 @@ body h1, body h2, body h3 {
 
 /*Page 2*/  
 
+#mkwii_title {
+    border : 1px solid var(--primary-color);
+    border-radius: 3px;
+}
 
+#mkwii_review_title {
+    text-align: center;
+    color: var(--accent2-color);
+    font-family: var(--heading-font);
+    background-color: var(--secondary-color);
+    margin-bottom: 2rem;
+    z-index: 2;
+    border-radius: 5rem;
+    padding: 1%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
 
+#mkwii_logo {
+    width: 50%;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+}
 
+.hero_logo h1 {
+    color: var(--accent1-color);
+    background-color: var(--secondary-color);
+    text-align: center;
+    grid-row: 2/3;
+}
+
+#boo_image {
+    transition: opacity 0.5s ease-in-out;
+}
+
+#boo_image:hover {
+    opacity: 0;
+}
+
+.heading_fun {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.heading_fun h2 {
+    display: inline-block;
+}
+
+.heading_fun img {
+    width: 100px;
+    height: auto;
+    margin-left: 20px;
+}
+
+#mega_mushroom {
+    transition: transform 0.3s ease-in-out;   
+}
+
+#mega_mushroom:hover {
+    transform: scale(1.3);
+}
+
+#green_shell {
+    width: 100px;
+    height: auto;
+    margin-left: 20px;
+    transition: transform 0.3s ease-in-out; 
+}
+
+#green_shell:hover {
+    transform: rotate(360deg);
+}
+
+#background {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 20px;
+    padding-top: 0;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);;
+}
+
+#gameplay {
+    display: flex;
+    margin-left: 5px; 
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 20px;
+    padding-top: 0;
+    border-radius: 10px;
+    max-width: 900px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+#luigi {
+    width: auto;
+    height: 200px;
+    border-radius: 3px;
+    margin-right: 20px;
+    margin-top: 10%;
+}
+
+#gameplay p {
+    max-width: 600px;
+    text-align: justify;
+    line-height: 1.5;
+    margin: 20px auto;
+}
+
+#mkwii_podium {
+    max-width: 640px;
+    height: auto;
+    border-radius: 15px;
+}
+
+#graphics {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 700px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
 
 footer {
     background-color: var(--primary-color);
@@ -227,3 +356,6 @@ footer p {
     font-size: 0.8em;
 }
 
+* {
+    border: red solid 1px;
+}
