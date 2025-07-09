@@ -474,6 +474,48 @@ footer p {
     } 
 
     /* Page 2 */
+    .heading_fun img {
+        width: 80px;
+        height: auto;
+        margin: auto 10px;
+    }
+    .heading_fun h2 {
+        font-size: 2.5rem;
+    }
+
+    #graphics_heading {
+        font-size: 1.5rem;
+        width: 90%;
+    }
+    #mkwii_title {
+        border: hidden;
+    }
+
+    #mkwii_review_title {
+        font-size: 1.1rem;
+        padding: auto;
+    }
+
+    #background, #gameplay, #graphics p {
+        font-size: 1rem;
+    }
+
+    #gameplay {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #luigi {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    #mkwii_podium {
+        width: 90%;
+        height: auto;
+    }
 }
 
 * {
