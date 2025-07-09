@@ -28,7 +28,7 @@ Fonts are separated by a | */
   --nav-background-color: var(--accent2-color);
   --nav-hover-link-color: var(--primary-color);
   /*--nav-hover-background-color: var(--primary-color);*/
-  
+
   /* TODO: Week07 - test out your colors using by viewing your html and interacting with it.
    * - Make sure the contrast is enough that things can be easily read (i.e. https://coolors.co/contrast-checker/)
    */
@@ -118,6 +118,12 @@ nav {
   text-align: center;
   font-size: 1.2em;
 }
+
+#reviews-nav {
+  border: 1px solid var(--nav-link-color);
+  border-radius: 5px;
+}
+
 nav {
   list-style-type: none;
   display: flex;
