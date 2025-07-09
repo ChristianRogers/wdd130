@@ -447,6 +447,10 @@ footer p {
     nav a img {
         max-width: 75px;
     }
+
+    footer p {
+        font-size: 0.5em;
+    }
     
     .hero_logo {
         height: 15vh; 
