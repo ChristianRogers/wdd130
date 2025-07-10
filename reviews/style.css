@@ -49,6 +49,8 @@ nav a img {
 
 .hero_img {
     width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
 }
 
 .hero {
