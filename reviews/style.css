@@ -306,7 +306,7 @@ body h1, body h2, body h3 {
     width: 90%;
     max-width: 800px;
     margin: 0 auto;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #gameplay {
@@ -318,9 +318,8 @@ body h1, body h2, body h3 {
     padding-top: 0;
     border-radius: 10px;
     width: 90%;
-    max-width: 900px;
+    max-width: 800px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
 }
 
 #luigi {
@@ -379,13 +378,14 @@ body h1, body h2, body h3 {
     padding: 10px;
     border-radius: 10px;
     width: 90%;
-    max-width: 900px;
+    max-width: 600px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     justify-self: center;
 }
 
 #sadx_meme {
     width: auto;
+    max-width: 100%;
     border-radius: 5px;
     margin-top: 5px;
     
@@ -399,7 +399,7 @@ body h1, body h2, body h3 {
 }
 
 #gamecube_logo, #dreamcast_logo {
-    transition: transform 0.3s ease-in-out;   
+    transition: transform 0.6s ease-in-out;   
 }
 
 #gamecube_logo:hover {
@@ -410,7 +410,163 @@ body h1, body h2, body h3 {
     transform: rotate(360deg);
 }
 
+#versions_mods {
+    display: flex;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
 
+#versions_mods p {
+    line-height: 1.5;
+}
+
+#versions_mods img {
+    width: auto;
+    height: auto;
+    max-height: 200px;
+    border-radius: 5px;
+    margin-right: 25px;
+}
+
+#sadx_stories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-items: center;
+    color: var(--secondary-color);
+    width: 90%;
+    max-width: 800px;
+    margin: 5vh auto;
+    font-size: 1.2rem;
+}
+
+.character_icons {
+    max-width: 90%;
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+    justify-items: center;
+}
+
+.character_icons img {
+    width: 75%;
+    height: auto;
+    border-radius: .5em;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 1vw;
+}
+
+.character_icons img:hover {
+    transform: scale(1.1);
+}
+
+#sonic_icon, #tails_icon, #knuckles_icon {
+    grid-row : 1/2;
+}
+
+#amy_icon, #big_icon, #gamma_icon {
+    grid-row : 2/3;
+}
+
+#sonic_spin {
+    transition: transform .25s ease-in-out;
+}
+
+#sonic_spin:hover {
+    transform: rotate(-350deg);
+}
+
+.tooltip {
+ position: relative;
+ display: inline-block;
+}
+
+.tooltip .tooltiptext {
+ width: 90%;
+ max-width: 200px;
+ background-color: var(--primary-color);
+ color: var(--accent2-color);
+ text-align: left;
+ border-radius: 6px;
+ padding: 8px;
+ position: absolute;
+ z-index: 1;
+ bottom: 100%;
+ opacity: 0;
+ transition: opacity 0.3s;
+ left: 50%;
+ transform: translateX(-50%);
+ pointer-events: none;
+ margin-bottom: 15px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+#audio_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#audio_section img {
+    width: 75%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid var(--secondary-color);
+}
+
+#robotnik {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+#closing_thoughts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    width: 90%;
+    margin: 2rem auto;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+#closing_thoughts img {
+    width: 80%;
+    max-width: 640px;
+    height: auto;
+    max-height: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid var(--secondary-color);
+}
 
 footer {
     background-color: var(--primary-color);
@@ -480,20 +636,16 @@ footer p {
         margin: auto 10px;
     }
     .heading_fun h2 {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 
     #graphics_heading {
         font-size: 1.5rem;
         width: 90%;
     }
-    #mkwii_title {
-        border: hidden;
-    }
-
+    
     #mkwii_review_title {
         font-size: 1.1rem;
-        padding: auto;
     }
 
     #background, #gameplay, #graphics p {
@@ -516,6 +668,49 @@ footer p {
         width: 90%;
         height: auto;
     }
+
+    /* Page 3 */
+    #sadx_review_title {
+        font-size: 1.1rem;
+    }
+
+    #versions_mods {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #versions_mods img {
+        width: auto;
+        max-width: 100%;
+        max-height: max-content;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .character_icons {
+        grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+        grid-template-rows: repeat(3, 1fr);
+    }
+    
+    #sonic_icon, #tails_icon {
+        grid-row : 1/2;
+    }
+
+    #knuckles_icon, #amy_icon {
+        grid-row : 2/3;
+    }
+
+    #big_icon, #gamma_icon {
+        grid-row : 3/4;
+    }
+
+    .tooltip .tooltiptext {
+       width: 250px;
+       max-width: none;
+       font-size: 1.3rem;
+    }
+    
 }
 
 * {
