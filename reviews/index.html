@@ -81,37 +81,43 @@
     </main>
 
     <footer>
-            <p>Regular Guy Reviews &copy; 2025 - Christian Rogers</p>
+        <p>Regular Guy Reviews &copy; 2025 - Christian Rogers</p>
+
+        <div class="social-links">
+            <a href="https://www.facebook.com/christianrogers03" target="_blank"><img src="images/Facebook.svg" alt="Facebook"></a>
+            <a href="https://www.twitter.com/therealrogerz" target="_blank"><img src="images/X.svg" alt="Twitter"></a>
+            <a href="https://www.instagram.com/christianrogers03" target="_blank"><img src="images/Instagram.svg" alt="Instagram"></a>
             <p id="site-plan"><a href="site-plan.html">Site Plan</a></p>
+        </div>
     </footer>
 
-<script>
-  let slideIndex = 1;
-  showSlides(slideIndex);
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
 
-  function plusSlides(n) {
-  showSlides(slideIndex += n);
-  }
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
 
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
-  }
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
 
-  function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].classList.remove("active");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].classList.add("active");
-  }
-</script>
+    function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].classList.add("active");
+    }
+    </script>
 </body>
 </html>
