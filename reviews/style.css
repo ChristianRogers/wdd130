@@ -596,7 +596,7 @@ footer a img {
 }
 
 #site-plan {
-    margin-left: 10px
+    margin-left: 10px;
 }
 
 footer a:hover {
@@ -631,7 +631,7 @@ footer p {
     }
 
     #site-plan {
-        margin-left: none;
+        margin-left: 5px;
     }
     
     .hero_logo {
